@@ -1,0 +1,6 @@
+--cpp -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Algorithm/PID -I ..\User\Device\DR16 -I ..\User\Device\Motor -I ..\User\Device\Steer -I ..\User\Module\Chassis -I ..\User\Device\Claw -I ..\User\Device\Relay --cpp11
+-I.\RTE\_motor_7.25
+-IF:\KEILI\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+-IF:\KEILI\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx
+-o motor_7.25\chasis.o --omf_browse motor_7.25\chasis.crf --depend motor_7.25\chasis.d "..\User\red\chasis.cpp"
